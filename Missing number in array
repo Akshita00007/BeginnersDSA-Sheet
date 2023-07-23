@@ -1,0 +1,18 @@
+class Solution{
+  public:
+    int missingNumber(vector<int>& array, int n) {
+        // Your code goes here
+        //sum of n natural numbers
+        int sum_n=(n*(n+1))/2;
+        int sum=0;
+        //calculating array sum
+        for(int i:array)
+        {
+            sum=sum+i;
+            
+        }
+        
+        return sum_n-sum;
+        
+    }
+};
